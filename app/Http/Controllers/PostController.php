@@ -11,9 +11,12 @@ class PostController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        //
-    }
+{
+    $name = 'Siham';
+    $age = 23;
+
+    return view('posts.index', ['username' => $name, 'age' => $age]);
+}
 
     /**
      * Show the form for creating a new resource.
